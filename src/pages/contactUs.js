@@ -34,7 +34,7 @@ function ContactUs() {
 
   return (
     <div className='content'>
-        <div className='form'>
+        <div className='Form'>
             <h1>Contact Us</h1>
             
             <form onSubmit={handleSubmit}>
@@ -58,18 +58,18 @@ function ContactUs() {
             )} 
 
         </div>
-            <div className='contact-info'>
-                <strong>Company's Address:</strong>
-                <p>EduLearn Inc.
-                1234 Education Lane
-                Knowledge City, ED 56789</p>
+        <div className='contact-info'>
+            <strong>Company's Address:</strong>
+            <p>EduLearn Inc.
+            1234 Education Lane
+            Knowledge City, ED 56789</p>
 
-                <strong>Phone Number:</strong>
-                <p>+1 (800) 123-4567</p>
+            <strong>Phone Number:</strong>
+            <p>+1 (800) 123-4567</p>
 
-                <stong>Email:</stong>
-                <p>support@edulearn.com</p>
-            </div>
+            <strong>Email:</strong>
+            <p>support@edulearn.com</p>
+        </div>
         
       
     </div>

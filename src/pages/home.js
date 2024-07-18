@@ -4,7 +4,8 @@ import './home.css'
 
 function Home() {
     const [dateTime, setDateTime] = useState(new Date());
-
+    const [welcomeMessage, setWelcomeMessage] = useState("Welcome!");
+    const [userName, setUserName] = useState("");
         useEffect(() => {
             const timer = setInterval(() => {
             setDateTime(new Date());
@@ -24,16 +25,28 @@ function Home() {
             return "Good Evening...!";
             }
         };
+
+        const handleInputChange = (event) => {
+        const name = event.target.value;
+        setUserName(name);
+        setWelcomeMessage(`Welcome, ${name}!`);
+  };
   return (
     <div className='container'>
-         
+        
         <div className='welcome'>
             <h2 >{getGreetingMessage()}</h2>
-            <h1>Welcome to EduLearn!</h1>
-            <p>Your one-stop destination for quality educational resources. Dive into a world of knowledge with our comprehensive collection of school papers, engaging educational videos, and concise short notes. Empower your learning journey with EduLearn, where education meets excellence!</p>
+            <div className='type-name'>
+                <h3>{welcomeMessage}</h3>
+                <input className="name-input" type="text" value={userName} onChange={handleInputChange} placeholder=" Enter your name here"/>
+            </div>
+            <div className='content-home'>
+                <h1>Welcome to EduLearn!</h1>
+                <p>Your one-stop destination for quality educational resources. Dive into a world of knowledge with our comprehensive collection of school papers, engaging educational videos, and concise short notes. Empower your learning journey with EduLearn, where education meets excellence!</p>
+            </div>
+            
         </div>
-            {/* <h2>Today</h2>
-            <h2>{dateTime.toLocaleDateString()}</h2> */}
+            
            
         <div>
 
