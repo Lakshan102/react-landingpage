@@ -36,6 +36,7 @@ function Home() {
         
         <div className='welcome'>
             <h2 >{getGreetingMessage()}</h2>
+             
             <div className='type-name'>
                 <h3>{welcomeMessage}</h3>
                 <input className="name-input" type="text" value={userName} onChange={handleInputChange} placeholder=" Enter your name here"/>

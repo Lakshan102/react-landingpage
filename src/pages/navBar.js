@@ -1,30 +1,3 @@
-/* import React from 'react'
-import './navBar.css'
-import logolight from '../img/logo-black.png';
-import toggle from '../img/night.png';
-
-function header() {
-
-
-  
-  return (
-    <div className='navbar'>
-      <img className='logo' src={logolight} alt='logo'></img>
-      <ul>
-        <a href='http://localhost:3000/'>Home</a>
-        <a href='http://localhost:3000/about'>About</a>
-        <a href='http://localhost:3000/contact'>Contact</a>
-      </ul>
-
-      <div className='toggle'>
-        <img src={toggle} alt='toggle'></img>
-      </div>
-    </div>
-  )
-}
-
-export default header */
-
 import React, { useState, useEffect } from 'react';
 import './navBar.css';
 import logo_light from '../img/logo-black.png';
@@ -48,11 +21,12 @@ export default function Navbar() {
         useEffect(() => {
             const timer = setInterval(() => {
             setDateTime(new Date());
-            }, 1000);
+            },1000);
 
             
             return () => clearInterval(timer);
-        }, []);
+        }, []
+  );
 
 
   return (
