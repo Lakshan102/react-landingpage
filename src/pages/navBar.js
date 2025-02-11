@@ -6,10 +6,14 @@ import toggle_dark from '../img/day.png';
 import toggle_light from '../img/night.png';
 
 export default function Navbar() {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState(()=>{
+       return localStorage.getItem('theme') || 'light';
+      }
+  );
 
   useEffect(() => {
-    document.body.className = theme;
+      localStorage.setItem('theme', theme);
+      document.body.className = theme;
   }, [theme]);
 
   const toggleTheme = () => {

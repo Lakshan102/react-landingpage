@@ -1,8 +1,7 @@
 body{
     background-size: cover;
-    
     background-image: url('../img/backgraund.png');
-    background-color: #4fe7c1;
+    background-color: var(--background-color);
     background-attachment: fixed;
 }
 
@@ -13,7 +12,7 @@ body{
     margin-left: 20%;
     margin-right: 20%;
     position:relative;
-    left: 0px;
+    /*left: 0px;*/
     top:30px;
 }
 .type-name{
