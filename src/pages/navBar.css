@@ -1,19 +1,17 @@
 
 .navbar {
-    list-style-type: none;
     background: var(--background-color);
     position: fixed;
     top: 0;
     width:100%;
-    margin: 0;
-    /*padding: 0;*/
-    font-family: 'Times New Roman', Times, serif;
+    height: 50px;
+    padding: 10px;
+    font-family: 'Times New Roman', serif;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding: 10px 20px;
     z-index: 2;
 }
 .navbar.dark{
@@ -52,7 +50,6 @@
     padding: 0;
 }
 .links a{
-    /*padding-left:20px;*/
     text-decoration: none;
     cursor: pointer;
     border-bottom:none;

@@ -1,5 +1,10 @@
 import React,{ useState, useEffect } from 'react'
 import './home.css'
+import slide1 from '../img/slide01.png'
+import slide2 from '../img/slide02.png'
+import slide3 from '../img/slide03.png'
+import slide4 from '../img/slide04.png'
+import slide5 from '../img/slide05.png'
 
 
 function Home() {
@@ -30,9 +35,21 @@ function Home() {
         const name = event.target.value;
         setUserName(name);
         setWelcomeMessage(`Welcome, ${name}!`);
+
+
+
+
+        
   };
   return (
     <div className='container'>
+        <div className='slideshow'>
+            <img id='slid1' alt='slide1' src={slide1}/>
+            <img id='slid2' alt='slide2' src={slide2}/>
+            <img id='slid3' alt='slide3' src={slide3}/>
+            <img id='slid4' alt='slide4' src={slide4}/>
+            <img id='slid5' alt='slide5' src={slide5}/>
+        </div>
         
         <div className='welcome'>
             <h2 >{getGreetingMessage()}</h2>
@@ -57,3 +74,6 @@ function Home() {
 }
 
 export default Home
+
+
+
