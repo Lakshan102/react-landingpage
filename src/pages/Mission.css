@@ -1,0 +1,12 @@
+.mission{
+    position:absolute;
+    top:400px;
+    left:600px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin:10px
+}
+.mission h1{
+    font-size: 50px;
+}
