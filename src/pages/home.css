@@ -4,9 +4,8 @@ body {
   background-attachment: fixed;
 }
 .container{
-  background-color: #EDF2F8;
   padding-top: 10px;
-  padding-bottom: 100px;
+  padding-bottom: 10px;
 }
 
 .welcome {
@@ -34,13 +33,11 @@ body {
   margin:0 auto;
   padding: auto;
   overflow:hidden;
-  border-radius: 20px;
 }
 .slideshow img{
   position:absolute;
   animation: slider 20s infinite;
   object-fit: cover;
-  border-radius: 20px;
   width: 100%;
   height: auto;
   margin-left: -675px;
