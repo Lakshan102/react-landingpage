@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from 'react'
 import './home.css'
 import './contactUs.css'
-import slide1 from '../img/slide01.png'
-import slide2 from '../img/slide02.png'
-import slide3 from '../img/slide03.png'
-import slide4 from '../img/slide04.png'
-import slide5 from '../img/slide05.png'
+// import slide1 from '../img/slide01-light.png'
+// import slide2 from '../img/slide02-light.png'
+// import slide3 from '../img/slide03-light.png'
+// import slide4 from '../img/slide04-light.png'
+import slide5 from '../img/slide01-dark.png'
+import slide6 from '../img/slide02-dark.png'
+import slide7 from '../img/slide03-dark.png'
+import slide8 from '../img/slide04-dark.png'
 import contact from '../img/contact.png'
+
 
 function Home() {
     const [dateTime, setDateTime] = useState(new Date());
@@ -59,6 +63,7 @@ function Home() {
         }
     };
 
+    
 
     // const handleInputChange = (event) => {
     //     const name = event.target.value;
@@ -74,11 +79,10 @@ function Home() {
         <div>
             <div className='container'>
                 <div className='slideshow'>
-                    <img id='slid1' alt='slide1' src={slide1} />
-                    <img id='slid2' alt='slide2' src={slide2} />
-                    <img id='slid3' alt='slide3' src={slide3} />
-                    <img id='slid4' alt='slide4' src={slide4} />
-                    <img id='slid5' alt='slide5' src={slide5} />
+                    <img id='slid1' alt='slide1' src={slide5} />
+                    <img id='slid2' alt='slide2' src={slide6} />
+                    <img id='slid3' alt='slide3' src={slide7} />
+                    <img id='slid4' alt='slide4' src={slide8} />
                 </div>
 
                 <div className='welcome'>

@@ -75,19 +75,21 @@ p{
     color:rgb(195, 219, 219);
 }
 
-h1.light, h2.light, h3.light, h4.light, h5.light, h6.light{
+.toggle h2.light{
     font-size: 40px;
     font-weight: bold;
     margin: 0;
     padding: 50px;
     --text-color:rgb(6, 7, 7);
 }
-h1.dark,h2.dark, h3.dark , h4.dark, h5.dark, h6.dark{
+.toggle h2.light{
     --text-color:aliceblue;
 }
-h1,h2,h3,h4,h5,h6{
+
+.toggle h2{
     color: var(--text-color);
 }
+/*
 p.dark{
     --text-color:white;
 }
@@ -105,7 +107,7 @@ a.dark{
 }
 a{
     color: var(--text-color);
-}
+} */
 
 
 /* mobile responsive */
