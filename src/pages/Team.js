@@ -1,10 +1,10 @@
 import React from 'react'
 import './Team.css'
-import Mem1 from '../img/mem1.jpg'
-import mem2 from '../img/mem2.jpg'
-import mem3 from '../img/mem3.jpg'
-import mem4 from '../img/mem4.jpg'
-import mem5 from '../img/mem5.jpg'
+import Mem1 from '../img/mem1.png'
+import mem2 from '../img/mem2.png'
+import mem3 from '../img/mem3.png'
+import mem4 from '../img/mem4.png'
+import mem5 from '../img/mem5.png'
 
 function Team() {
   return (

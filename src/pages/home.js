@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import './home.css'
-import './contactUs.css'
 // import slide1 from '../img/slide01-light.png'
 // import slide2 from '../img/slide02-light.png'
 // import slide3 from '../img/slide03-light.png'
@@ -10,6 +9,11 @@ import slide6 from '../img/slide02-dark.png'
 import slide7 from '../img/slide03-dark.png'
 import slide8 from '../img/slide04-dark.png'
 import contact from '../img/contact.png'
+import mem1 from '../img/mem1.png'
+import mem2 from '../img/mem2.png'
+import mem3 from '../img/mem3.png'
+import mem4 from '../img/mem4.png'
+import mem5 from '../img/mem5.png'
 
 
 function Home() {
@@ -63,7 +67,7 @@ function Home() {
         }
     };
 
-    
+
 
     // const handleInputChange = (event) => {
     //     const name = event.target.value;
@@ -100,10 +104,62 @@ function Home() {
                 </div>
 
             </div>
+            <hr/>
+            <div className='ourTeam'>
+                <h2>Our Team</h2>
+                <div className='cards'>
+                    <div className='card'>
+                        <img src={mem1} alt='mem1' />
+                        <div className='info'>
+                            <p>Jane Doe - CEO & Founder</p>
+                            <p>Jane is an experienced educator and visionary leader who founded EduLearn with a dream to revolutionize education. With over 20 years in the field, she brings a wealth of knowledge and passion to the company.</p>
+                        </div>
 
+                    </div>
+
+                    <div className='card'>
+                        <img src={mem2} alt='mem2' />
+                        <div className='info'>
+                            <p>John Smith - Chief Technology Officer</p>
+                            <p>John is a tech guru with a background in software development and a knack for innovative solutions. He leads our tech team in building and maintaining the EduLearn platform.</p>
+                        </div>
+                    </div>
+
+                    <div className='card'>
+                        <img src={mem3} alt='mem3' />
+                        <div className='info'>
+                            <p>Emily Johnson - Head of Content</p>
+                            <p>Emily is an expert in curriculum development and educational content creation. She ensures that our resources are high-quality, up-to-date, and aligned with educational standards.</p>
+                        </div>
+                    </div>
+
+                    <div className='card'>
+                        <img src={mem4} alt='mem4' />
+                        <div className='info'>
+                            <p>Michael Brown - Marketing Manager</p>
+                            <p>Michael drives our outreach efforts, helping us connect with learners and educators worldwide. His strategic vision and creativity keep EduLearn at the forefront of educational marketing.</p>
+                        </div>
+                    </div>
+
+                    <div className='card'>
+                        <img src={mem5} alt='mem5' />
+                        <div className='info'>
+                            <p>Sarah Wilson - Customer Support Lead</p>
+                            <p>Sarah oversees our customer support team, ensuring that our users receive prompt and helpful assistance. Her dedication to customer satisfaction is unparalleled.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div className='history'>
+                <h1>Our journey</h1>
+                <p>EduLibrary was founded in 2024 by a group of passionate educators and tech enthusiasts who believed in the power of technology to transform education. Starting as a small online resource hub, we have grown into a comprehensive educational platform that serves thousands of students, teachers, and lifelong learners worldwide.</p><br />
+                <p>Over the years, we have continuously evolved, incorporating the latest educational trends and technologies to provide high-quality, accessible learning materials. Our commitment to innovation and excellence has made EduLearn a trusted name in the field of education.</p>
+            </div>
+            <hr/>
             <div className='contact'>
                 <div className='contact-img'>
-                    <img src={contact} alt='contact'/>
+                    <img src={contact} alt='contact' />
                 </div>
                 <div className='Form'>
                     <form onSubmit={handleSubmit}>
@@ -129,18 +185,23 @@ function Home() {
                 </div>
 
             </div>
-            <div className='contact-info'>
-                <strong>Company's Address:</strong>
-                <p>EduLearn Inc.
-                    1234 Education Lane
-                    Knowledge City, ED 56789</p>
+            
+            <div className='footer'>
 
-                <strong>Phone Number:</strong>
-                <p>+1 (800) 123-4567</p>
+                <div className='contact-info'>
+                    <strong>Company's Address:</strong>
+                    <p>EduLearn Inc.
+                        1234 Education Lane
+                        Knowledge City, ED 56789</p>
 
-                <strong>Email:</strong>
-                <p>support@edulearn.com</p>
+                    <strong>Phone Number:</strong>
+                    <p>+1 (800) 123-4567</p>
+
+                    <strong>Email:</strong>
+                    <p>support@edulearn.com</p>
+                </div>
             </div>
+
         </div>
 
     )

@@ -60,11 +60,11 @@
     font-size: 18px;
     font-weight: 600;
 }
-.links a:hover{
+/* .links a:hover{
     background: rgb(236, 221, 221);
     color: black;
     border-bottom: rgb(110, 230, 184) solid 5px;
-}
+} */
 
 
 p{
@@ -72,7 +72,7 @@ p{
     font-weight: bold;
     margin: 0;
     padding: 0;
-    color:rgb(195, 219, 219);
+    color:rgb(255, 255, 255);
 }
 
 .toggle h2.light{
