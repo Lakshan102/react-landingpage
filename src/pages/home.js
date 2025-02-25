@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import './home.css'
-// import slide1 from '../img/slide01-light.png'
-// import slide2 from '../img/slide02-light.png'
-// import slide3 from '../img/slide03-light.png'
-// import slide4 from '../img/slide04-light.png'
+import tweter from '../img/tweter.png'
+import fb from '../img/FB.png'
+import insta from '../img/instagram.png'
+import linkedin from '../img/linkedin.png'
 import slide5 from '../img/slide01-dark.png'
 import slide6 from '../img/slide02-dark.png'
 import slide7 from '../img/slide03-dark.png'
@@ -14,6 +14,12 @@ import mem2 from '../img/mem2.png'
 import mem3 from '../img/mem3.png'
 import mem4 from '../img/mem4.png'
 import mem5 from '../img/mem5.png'
+import jurney from '../img/journey.png'
+import mission from '../img/mission.png'
+import values from '../img/value.png'
+import logoDark from '../img/logo.png'
+
+
 
 
 function Home() {
@@ -80,7 +86,7 @@ function Home() {
 
 
     return (
-        <div>
+        <div className='home'>
             <div className='container'>
                 <div className='slideshow'>
                     <img id='slid1' alt='slide1' src={slide5} />
@@ -104,9 +110,9 @@ function Home() {
                 </div>
 
             </div>
-            <hr/>
+            <hr />
             <div className='ourTeam'>
-                <h2>Our Team</h2>
+                <h1>Our Team</h1>
                 <div className='cards'>
                     <div className='card'>
                         <img src={mem1} alt='mem1' />
@@ -150,13 +156,30 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <hr/>
-            <div className='history'>
-                <h1>Our journey</h1>
-                <p>EduLibrary was founded in 2024 by a group of passionate educators and tech enthusiasts who believed in the power of technology to transform education. Starting as a small online resource hub, we have grown into a comprehensive educational platform that serves thousands of students, teachers, and lifelong learners worldwide.</p><br />
-                <p>Over the years, we have continuously evolved, incorporating the latest educational trends and technologies to provide high-quality, accessible learning materials. Our commitment to innovation and excellence has made EduLearn a trusted name in the field of education.</p>
+            <hr />
+            <div className='about'>
+                <h1>About Us</h1>
+                <div className='about_cards'>
+                    <div className='about_card'>
+                        <img src={jurney} alt='jurney' />
+                        <h2>Our journey</h2>
+                        <p className='about_info'>Founded in 2024, EduLibrary evolved from a small resource hub into a global educational platform, providing innovative and accessible learning materials.</p>
+                    </div>
+                    <div className='about_card'>
+                        <img src={values} alt='jurney' />
+                        <h2>Our Value</h2>
+                        <p className='about_info'>We are committed to excellence, embracing innovation to provide accessible and high-quality education with integrity, transparency, and a p sense of community.</p>
+                    </div>
+                    <div className='about_card'>
+                        <img src={mission} alt='jurney' />
+                        <h2>Our Mission</h2>
+                        <p className='about_info'>EduLearn empowers learners with accessible, engaging, and high-quality educational resources to foster growth and a brighter future.</p>
+                    </div>
+                </div>
+
             </div>
-            <hr/>
+
+            <hr />
             <div className='contact'>
                 <div className='contact-img'>
                     <img src={contact} alt='contact' />
@@ -185,23 +208,29 @@ function Home() {
                 </div>
 
             </div>
-            
+
             <div className='footer'>
-
-                <div className='contact-info'>
-                    <strong>Company's Address:</strong>
-                    <p>EduLearn Inc.
-                        1234 Education Lane
-                        Knowledge City, ED 56789</p>
-
-                    <strong>Phone Number:</strong>
-                    <p>+1 (800) 123-4567</p>
-
-                    <strong>Email:</strong>
-                    <p>support@edulearn.com</p>
+                <div className='footer_left footer_card'>
+                    <img src={logoDark} alt='' />
+                    <p>EduLearn empowers learners with quality educational resources, fostering innovation and accessibility for lifelong learning.</p>
+                    <div className='social'>
+                        <img src={fb} alt='' />
+                        <img src={insta} alt='' />
+                        <img src={linkedin} alt='' />
+                        <img src={tweter} alt='' />
+                    </div>
                 </div>
-            </div>
 
+                <div className='footer_middle footer_card'>
+
+                </div>
+
+                <div className='footer_right footer_card'>
+
+
+                </div>
+
+            </div>
         </div>
 
     )

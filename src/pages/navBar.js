@@ -35,7 +35,7 @@ export default function Navbar() {
 
   return (
     <div className='navbar'>
-      <img src={theme === 'light' ? logo_light : logo_dark} alt="Logo" className='logo' />
+      <img src={theme === 'light' ? logo_dark : logo_light} alt="Logo" className='logo' />
       <div className='links'>
         <a href='/'>Home</a>
         <a href='/About'>About</a>
